@@ -19,7 +19,7 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     proxy: {
-      "/graphql": {
+      "/egova/skywalkingnj/graphql": {
         target: `${process.env.SW_PROXY_TARGET || "http://127.0.0.1:12800"}`,
         changeOrigin: true,
       },
